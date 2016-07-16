@@ -1,0 +1,115 @@
+
+
+
+
+
+Java Platform Standard Edition 8 Documentation  :
+
+file:///C:/DOCs/IT/PROGRAMMING/JAVA/JAVA-from-ORACLE/JDK8SE_1/index.html
+
+
+
+
+The Java Tutorials :
+
+
+http://docs.oracle.com/javase/tutorial/
+
+
+
+
+General Information about Writing Event Listeners :
+
+http://docs.oracle.com/javase/tutorial/uiswing/events/generalrules.html#eventHandlers
+
+
+
+
+How to Use Various Components :
+
+
+http://docs.oracle.com/javase/tutorial/uiswing/components/componentlist.html
+
+
+
+
+
+Writing Event Listeners: Examples :
+
+
+http://docs.oracle.com/javase/tutorial/uiswing/examples/events/index.html#MultiListener
+
+
+
+
+
+
+JavaT Platform, Standard Edition 7
+API Specification
+
+
+https://docs.oracle.com/javase/7/docs/api/
+
+
+
+
+
+
+Java Platform Standard Edition 7 Documentation :
+
+
+http://docs.oracle.com/javase/7/docs/index.html
+
+
+
+
+
+http://docs.oracle.com/javase/7/docs/api/java/util/regex/Matcher.html#start()
+
+
+
+
+
+
+http://stackoverflow.com/questions/6270132/create-a-custom-event-in-java
+
+
+
+
+http://www.javaworld.com/article/2077533/learn-java/java-tip-35--create-new-event-types-in-java.html
+
+
+
+
+Defining Custom Source-Event-Listener in Java :
+
+
+http://www.codeproject.com/Articles/677591/Defining-Custom-Source-Event-Listener-in-Java
+
+
+
+
+
+http://www.jguru.com/faq/view.jsp?EID=98547
+
+
+
+
+Lesson: Writing Event Listeners :
+
+
+
+
+
+https://docs.oracle.com/javase/tutorial/uiswing/events/
+
+
+
+
+https://castever.wordpress.com/2008/07/31/how-to-create-your-own-events-in-java/
+
+
+
+
+
+http://www.java2s.com/Code/Java/Event/CreatingaCustomEvent.htm

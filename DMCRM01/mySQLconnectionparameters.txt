@@ -1,0 +1,18 @@
+
+
+
+
+MySQL  parameters for MLM Business CRM Data Mining 
+
+server version :  5.6.19
+
+hostname  :  localhost
+
+port  :  3306
+
+username :  root
+
+
+db name  : dmcsm
+
+
