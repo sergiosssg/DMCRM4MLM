@@ -10,7 +10,7 @@ package DataMining;
 
 
 /**
- * 
+ *  stores found occurence in the text resource 
  */
 
 public class FoundOccurence {

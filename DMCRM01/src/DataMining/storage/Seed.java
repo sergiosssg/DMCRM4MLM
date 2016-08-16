@@ -8,5 +8,6 @@ package DataMining.storage;
  *
  */
 public interface Seed {
+	boolean isValid();
 
 }

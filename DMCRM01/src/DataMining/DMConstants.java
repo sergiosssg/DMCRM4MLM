@@ -10,7 +10,7 @@ package DataMining;
 public interface DMConstants {
 	
 	public static final int WEBPAGETOBELOADED = 1;
-	public static final int WEBPAGETLOADEDSUCCESSFUL = 2;
+	public static final int WEBPAGELOADEDSUCCESSFUL = 2;
 	public static final int WEBPAGELOADEDFAILED = 4;
 	public static final int WEBPAGESTORED = 8;
 	

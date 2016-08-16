@@ -8,5 +8,7 @@ package DataMining.storage;
  *
  */
 public interface Branch {
+	int getDepthLevel();
+	boolean isNested();
 
 }
