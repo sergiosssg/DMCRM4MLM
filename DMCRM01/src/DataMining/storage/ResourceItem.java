@@ -7,7 +7,7 @@ package DataMining.storage;
  * @author SSG
  *
  */
-public interface DMItem {
+public interface ResourceItem {
 	
 	public long getId();
 	

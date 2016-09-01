@@ -7,7 +7,7 @@ package DataMining.clausesprocessing;
  * @author SSG
  *
  */
-public class SubClause implements Clause, HTMLTagConstants {
+public class SubClauseDefault implements Clause, HTMLTagConstants {
 
 	@Override
 	public int getId() {

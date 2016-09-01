@@ -7,7 +7,7 @@ package DataMining.clausesprocessing;
  * @author SSG
  *
  */
-public class ClauseItem implements Clause {
+public class ClauseItemDefault implements Clause {
 
 	@Override
 	public int getId() {

@@ -7,7 +7,7 @@ package DataMining.storage;
  * @author SSG
  *
  */
-public class DMResource implements DMItem{
+public class ResourceItemDefault implements ResourceItem{
 
 	@Override
 	public long getId() {
