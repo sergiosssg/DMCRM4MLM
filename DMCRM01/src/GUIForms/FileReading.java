@@ -55,13 +55,14 @@ public class FileReading extends JFrame {
 	
 	JPanel _contentPane;
 	Frame _thisClass;
-	private DataMining.GettterHtmlFile _htmlGetter;
+	private DataMining.HtmlProcesingHelper _htmlGetter;
 	private Dialog4Url _frm4URLstring;
 	private JFileChooser _fileCh4Save;
 	private JFileChooser _fileCh4Open;
 	private File _fileHTMLfetched;
 	private String _fileNamePrepared;
 	private DefaultListModel<String> _lstModel4RegExp;
+	private String _htmlFetchedStr;
 	
 	
 	JAboutBox dlgAbout;
@@ -94,8 +95,9 @@ public class FileReading extends JFrame {
 		_thisClass = this;
 		
 		_fileNamePrepared = null;
+		_htmlFetchedStr = null;
 		
-		_htmlGetter = new DataMining.GettterHtmlFile();
+		_htmlGetter = new DataMining.HtmlProcesingHelper();
 		_frm4URLstring = new Dialog4Url();
 		
 		_fileCh4Save = new JFileChooser();
@@ -124,7 +126,8 @@ public class FileReading extends JFrame {
 		JMenu mnFile = new JMenu("File");
 		menuBar.add(mnFile);
 		
-		JMenuItem mntmChoseFile = new JMenuItem("Choose File");
+		JMenuItem mntmChoseFile = new JMenuItem("Save in  File");
+		mntmChoseFile.setEnabled(false);
 		mntmChoseFile.addActionListener(new ActionListener() {
 			public void actionPerformed(ActionEvent arg0) {
 				String fname;
@@ -240,15 +243,15 @@ public class FileReading extends JFrame {
 
 				JOptionPane.showMessageDialog(_thisClass, strURL);
 				
-				/*
+				
 				
 				try {
-					resIsScriptExists = _htmlGetter.doSavingHTML2File();
+					resIsScriptExists = _htmlGetter.doFromURLHTML2File();
 				} catch (IOException e) {
 					// TODO Auto-generated catch block
 					e.printStackTrace();
 				}
-				*/
+				
 				
 				//if (resIsScriptExists) lblStatusBar.setText("script found");
 				; 

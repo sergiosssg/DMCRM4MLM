@@ -9,12 +9,12 @@ import java.util.regex.*;
  * @author SSG
  *
  */
-public class HTMLProcessor implements DMConstants{
+public class HTMLProcessingTemporary implements DMConstants{
 
 	/**
 	 * 
 	 */
-	public HTMLProcessor() {
+	public HTMLProcessingTemporary() {
 		// TODO Auto-generated constructor stub
 	}
 	

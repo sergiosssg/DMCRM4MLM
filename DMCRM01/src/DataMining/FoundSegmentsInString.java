@@ -41,6 +41,7 @@ public class FoundSegmentsInString {
 	}
 	
 	public FoundOccurence getOccurence(int index){
+		/*
 		FoundOccurence found = null;
 		Iterator<FoundOccurence> it = _list.iterator();
 		while (it.hasNext()){
@@ -48,9 +49,13 @@ public class FoundSegmentsInString {
 			if(!found.isEmpty() && found.getIndex() == index) return found;
 		}
 		return null;
+		*/
+		return (index>=0 && index < _numberOfElements)?_list.get(index): null;
 	}
 	
 	public int countSegments() { return _numberOfElements;}
+	
+	public void flush() { _numberOfElements = 0; _list.clear();}
 	
 	
 	private ArrayList<FoundOccurence> _list;

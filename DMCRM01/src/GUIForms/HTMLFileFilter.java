@@ -16,7 +16,8 @@ public class HTMLFileFilter extends FileFilter {
 		
 	public boolean accept(File fileArg) {
 	
-		if (fileArg.getName().endsWith(".html")) return true;
+		if (fileArg.getName().endsWith(".htm") ||
+				fileArg.getName().endsWith(".html")) return true;
 		if (fileArg.isDirectory()) return true;
 				
 		return false;
