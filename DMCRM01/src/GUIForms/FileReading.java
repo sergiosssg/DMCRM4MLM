@@ -33,6 +33,7 @@ import java.awt.event.ActionListener;
 import java.awt.event.ActionEvent;
 import java.io.File;
 import java.io.IOException;
+import java.util.ArrayList;
 
 import javax.swing.JSplitPane;
 import javax.swing.AbstractAction;
@@ -63,10 +64,11 @@ public class FileReading extends JFrame {
 	private String _fileNamePrepared;
 	private DefaultListModel<String> _lstModel4RegExp;
 	private String _htmlFetchedStr;
+	private ArrayList<String> _lst4Needed2DeleteTags;
 	
 	
 	JAboutBox dlgAbout;
-	private final Action action = new SwingAction();
+	private final Action _action = new SwingAction();
 	private JTable _table4BrowsingHTMLSegments2Delete;
 	private JTextField txtFld4NP4Brows2DelSegmnts;
 	
@@ -97,6 +99,9 @@ public class FileReading extends JFrame {
 		_fileNamePrepared = null;
 		_htmlFetchedStr = null;
 		
+		_lst4Needed2DeleteTags = new ArrayList<String>(128);
+		_lstModel4RegExp = new DefaultListModel<String>();
+		
 		_htmlGetter = new DataMining.HtmlProcesingHelper();
 		_frm4URLstring = new Dialog4Url();
 		
@@ -105,6 +110,8 @@ public class FileReading extends JFrame {
 		
 		_fileCh4Open = new JFileChooser();
 		_fileCh4Open.setFileFilter(new HTMLFileFilter());
+		
+		
 		
 		String _strCurrentStatusURLInfo;
 		String _strCurrentStatusFileInfo;
@@ -338,7 +345,7 @@ public class FileReading extends JFrame {
 		Component hStrut41 = Box.createHorizontalStrut(20);
 		pnlNavigating4Browsing2DelSegments.add(hStrut41);
 		
-		JLabel lbl4NP4Brows2DelSegmnts = new JLabel("Enter New Reg Expression");
+		JLabel lbl4NP4Brows2DelSegmnts = new JLabel("Enter New Expression");
 		pnlNavigating4Browsing2DelSegments.add(lbl4NP4Brows2DelSegmnts);
 		
 		Component hStrut42 = Box.createHorizontalStrut(20);
@@ -359,16 +366,10 @@ public class FileReading extends JFrame {
 				 *    
 				 */
 				
+				_lst4Needed2DeleteTags.add(txtFld4NP4Brows2DelSegmnts.getText());
 				
-				
-
-				
-				
-				
-				
-				
-				//_lstModel4RegExp.addElement(txtFld4NP4Brows2DelSegmnts.getText());
-				//_lstModel4RegExp.addElement("+++++");
+				_lstModel4RegExp.addElement(txtFld4NP4Brows2DelSegmnts.getText());
+				_lstModel4RegExp.addElement("+++++");
 				//_lstModel4RegExp.notify();
 			}
 		});

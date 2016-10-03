@@ -6,6 +6,7 @@ import java.awt.Dimension;
 import java.awt.LayoutManager;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
+import java.util.Enumeration;
 import java.util.Iterator;
 import java.util.List;
 
@@ -138,6 +139,23 @@ public class SListComponent extends JPanel {
 	public SListComponent(LayoutManager arg0, boolean arg1) {
 		super(arg0, arg1);
 		// TODO Auto-generated constructor stub
+	}
+	
+	
+	
+	public String[] getAllElements(){
+		Enumeration<String>  en =_lstModel.elements();
+		String[] _strArr = new String[_lstModel.size()];
+		
+		for(int i=0; en.hasMoreElements();) {
+			_strArr[i++] = en.nextElement();
+		}
+		return _strArr;
+	}
+	
+	
+	public int getSizeOfModel(){
+		return _lstModel.getSize();
 	}
 	
 	
